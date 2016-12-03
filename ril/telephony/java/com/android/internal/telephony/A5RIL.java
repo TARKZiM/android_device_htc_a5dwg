@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014, The CyanogenMod Project. All rights reserved.
+ * Copyright (c) 2015, The CyanogenMod Project. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,11 +20,6 @@ import android.content.Context;
 import android.os.AsyncResult;
 import android.os.Message;
 
-/**
- * RIL customization for Desire 816 (A5)
- *
- * {@hide}
- */
 public class A5RIL extends RIL {
 
     public A5RIL(Context context, int preferredNetworkType, int cdmaSubscription) {
@@ -48,4 +43,3 @@ public class A5RIL extends RIL {
         }
     }
 }
-
