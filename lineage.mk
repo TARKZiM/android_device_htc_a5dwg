@@ -16,7 +16,7 @@
 
 $(call inherit-product, device/htc/a5dwg/full_a5dwg.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common LINEAGE stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_a5dwg
+PRODUCT_NAME := lineage_a5dwg
