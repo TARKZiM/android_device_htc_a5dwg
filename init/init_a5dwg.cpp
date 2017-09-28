@@ -51,12 +51,12 @@ void gsm_properties(char const default_network[])
 
 void vendor_load_properties()
 {
-    std::string platform = property_get("ro.board.platform");
+    std::string platform = GetProperty("ro.board.platform","");
     if (platform != ANDROID_TARGET)
         return;
 
-    std::string bootmid = property_get("ro.boot.mid");
-    std::string carrier = property_get("ro.boot.carrier");
+    std::string bootmid = GetProperty("ro.boot.mid","");
+    std::string carrier = GetProperty("ro.boot.carrier","");
 
     if (bootmid == "0P9C50000") {
         /* a5dwg (chinese) */
@@ -106,6 +106,7 @@ void vendor_load_properties()
             property_set("ro.product.model", "D816w");
         }
     }
-      std::string device = property_get("ro.product.device"); 
-      ERROR("Found bootmid %s setting build properties for %s device\n", bootmid.c_str(), device.c_str());
+      std::string device = GetProperty("ro.product.device",""); 
+ 
+      LOG(ERROR) << "Found bootmid '" << bootmid.c_str() << "' setting build properties for '" << device.c_str() << "' device\n";
 }
