@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2015 The CyanogenMod Project
+#               2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,6 +20,10 @@ $(call inherit-product, device/htc/a5-common/a5-common.mk)
 
 # Inherit a5ul-specific vendor tree
 $(call inherit-product-if-exists, vendor/htc/a5dwg/a5dwg-vendor.mk)
+
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
