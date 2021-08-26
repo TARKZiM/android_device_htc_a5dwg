@@ -14,9 +14,15 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/htc/a5dwg/full_a5dwg.mk)
+# Inherit from a5dwg device
+$(call inherit-product, device/htc/a5dwg/device.mk)
 
-# Inherit some common LINEAGE stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_a5dwg
+PRODUCT_DEVICE := a5dwg
+PRODUCT_BRAND := htc
+PRODUCT_MODEL := a5dwg
+PRODUCT_MANUFACTURER := HTC

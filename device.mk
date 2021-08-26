@@ -16,3 +16,10 @@
 
 # Inherit from a5-common
 $(call inherit-product, device/htc/a5-common/a5-common.mk)
+
+# Inherit a5ul-specific vendor tree
+$(call inherit-product-if-exists, vendor/htc/a5dwg/a5dwg-vendor.mk)
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
