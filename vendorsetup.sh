@@ -1,2 +1,0 @@
-add_lunch_combo lineage_a5dwg-eng
-add_lunch_combo lineage_a5dwg-userdebug
