@@ -37,7 +37,7 @@ AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_HTC_DUAL_SIM := true
 
 # HIDL
-DEVICE_MANIFEST_FILE += device/htc/a5ul/manifest.xml
+DEVICE_MANIFEST_FILE += device/htc/a5dwg/manifest.xml
 
 # Vendor Init
 TARGET_INIT_VENDOR_LIB := //device/htc/a5dwg:libinit_a5dwg
