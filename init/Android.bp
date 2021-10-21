@@ -20,7 +20,7 @@ cc_library_static {
     srcs: ["init_a5dwg.cpp"],
     include_dirs: [
         "device/htc/a5-common/init",
-        "system/core/base/include",
+        "system/libbase/include",
         "system/core/init"
     ],
     whole_static_libs: [
